@@ -1,0 +1,19 @@
+SEP | ( | 40
+SEP | ) | 41
+OP | - | 45
+CONST | 0 | 48
+CONST | 5 | 53
+SEP | ; | 59
+OP | = | 61
+ID | a | 97
+ID | b | 98
+SEP | { | 123
+SEP | } | 125
+CONST | -3 | 351
+OP | <= | 376
+KEY_WORLD | int | 1096
+ID | abqsf | 3075
+KEY_WORLD | while | 3087
+KEY_WORLD | return | 4497
+ErrorLex a4b
+ErrorLex s33333
