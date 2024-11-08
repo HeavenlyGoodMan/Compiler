@@ -132,11 +132,13 @@
     <ClCompile Include="lexer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="nfa.cpp" />
+    <ClCompile Include="SynAnal.cpp" />
     <ClCompile Include="token.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dfa.h" />
     <ClInclude Include="Hash.h" />
+    <ClInclude Include="SynAnal.h" />
     <ClInclude Include="token.h" />
     <ClInclude Include="lexer.h" />
     <ClInclude Include="nfa.h" />
