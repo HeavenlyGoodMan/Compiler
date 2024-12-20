@@ -11,15 +11,15 @@ int main() {
 	string s;
 	ifstream fin("input.txt");
 	ofstream tree("tree.txt");
+	ofstream out("pref.txt");
 	string text = "";
 	while (!fin.eof()) {
 		getline(fin, s);
 		text += s+" ";
 	}
 	lexer lex(0, text);
-	SynAnal A(lex);
+	SynAnal A(lex,out);
 	A.Analysis(tree);
-
 	/*for (int i = 0; i < A.koren.children.size(); ++i) {
 		cout << (*(A.koren.children[i])).str << " ";
 	}*/

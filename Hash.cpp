@@ -50,21 +50,21 @@ void Hash::push_all(lexer& a) {
 		}
 	}
 }
-int Hash::find(string s) {
+string Hash::find(string s) {
 	int pos, i1 = 0, sum = 0;
 	sum = this->function(s);
 	while (true) {
 		pos = sum + i1;
 		pos %= size;
 		if (Mas[pos].lexem == "") {
-			return -1;
+			return " ";
 		}
 		if (s==Mas[pos].lexem) {
-			return pos;
+			return Mas[pos].getType();
 		}
 		++i1;
 		if (i1 == size) {
-			return -1;
+			return " ";
 		}
 	}
 }

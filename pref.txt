@@ -1,0 +1,8 @@
+int acx  2 Func Decl 
+int c b aaa a  5 Decl 
+int bt ax  3 Decl 
+m3 DEFL a b  < m4 BF m1 DEFL  500 b  > m2 BF a b b  +  =  m1 BRL m2 DEFL  b  4 a  -  = m3 BRL m4 DEFL 
+ax a a b  +  -  = 
+bt  7  = 
+m5 DEFL aaa c  +  500 a  +  <= m6 BF a a  -200  100  +  +  =  b bt c  +  = m5 BRL m6 DEFL 
+c  return

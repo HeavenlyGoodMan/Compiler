@@ -1,10 +1,14 @@
 #pragma once
 #include "lexer.h"
+#include"Hash.h"
 #include <iostream>
 using namespace std;
 
-struct Node {
+struct Node { 
+	int count = 1;
 	string str="";
+	string type="";
+	string tr = "";
 	vector<Node*> children;
 	Node(string t) : str(t){}
 	Node() = default;
@@ -14,7 +18,7 @@ struct Node {
 class SynAnal {
 private:
 	lexer lex;
-	Node koren;
+	
 	bool l = 1;
 	void Begin(token& a, Node& n);
 	void End(token& a, Node& n);
@@ -32,7 +36,12 @@ private:
 	void RelationOp(token& a, Node& n);
 	void ID(token& a, Node& n);
 	void Const(token& a, Node& n);
+	bool op = 0;
+	int k = 1;
+	ofstream& out;
 public:
-	SynAnal(lexer lex_) : lex(lex_) {}
+	Node koren;
+	Hash table;
+	SynAnal(lexer lex_, ofstream& out) : lex(lex_),  out(out){}
 	void Analysis(ofstream& tree);
 };

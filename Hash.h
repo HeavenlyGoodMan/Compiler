@@ -16,6 +16,7 @@ public:
 	void push_back(token x);
 	void vivod(ofstream& fon);
 	void push_all(lexer& a);
-	int find(string s);
+	string find(string s);
 	token operator[](int i);
+	
 };

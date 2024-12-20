@@ -1,8 +1,17 @@
 int  acx ( ) {
-int a , b , c ;
-int ads ;
-while ( ( a + c ) <= ( 500 + a ) ) {
-a = ( a + ( -200 + 100 ) ) ;
-b = ( b + c - a ) ;
+int a , aaa , b , c ;
+int ax , bt ;
+while ( a < b ) {
+while ( 500 > b ) {
+a = b + b ;
 }
-return v ; }
+b = 4 - a ;
+}
+ax = a - ( a + b ) ;
+bt = 7 ;
+while ( ( aaa + c ) <= ( 500 + a ) ) {
+a = ( a + ( -200 + 100 ) ) ;
+b = ( bt + c - a ) ;
+}
+return c ; }
+ 
